@@ -1,4 +1,4 @@
-##Target: Set ringtone for each phone number according to property (platform: Aindroid 6)
+<h2>Target: Set ringtone for each phone number according to property (platform: Aindroid 6)</h2>
 
 Reference Android 6.0 Contacts app source code
 
@@ -30,6 +30,7 @@ Reference Android 6.0 Contacts app source code
 	...
 	}
 ->
+
     private void onRingtonePicked(Uri pickedUri) {
         if (pickedUri == null || RingtoneManager.isDefault(pickedUri)) {
             mCustomRingtone = null;
@@ -69,6 +70,6 @@ Reference Android 6.0 Contacts app source code
 
 ------------	
 
-	So, if we want to set ringtone for each phoneNumber we can use "getContentResolver().update(contactUri, values, null, null);"
+So, if we want to set ringtone for each phoneNumber we can use "getContentResolver().update(contactUri, values, null, null);"
 
 
